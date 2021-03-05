@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+      #div1 {background-color:black;
+            vertical-align: middle;
+            height:60px;
+            line-height:60px;
+  }
+      #div1 h {color:white;
+               font-size:16px;
+               vertical-align:middle;
+               line-height: normal;
+               padding-left:30px;
+  }
+   
+      #div2 {background-image: url("images/main_img.jpg");
+             background-size: cover;
+             background-position: center center;
+  }
+    
+     #div3 h1 {font-size:16px;
+               color:#4A4A4A;
+               margin-bottom:0;
+               
+  } 
+      #line {border:solid 1.5px #7A7A7A;
+             width:20px;
+             margin-bottom:37px;
+             margin-top:8px;
+  }
+      #div3 h2 {font-size:20px;
+                color:#1B1B1B;
+                margin-top:0;
+                margin-bottom:0;
+                padding-bottom:31px;
+  }
+      #div3 p {font-size:16px;
+              color:#7A7A7A;
+              margin-top:0;
+  }
+      #div4 {background-image: url("images/img1.jpg");
+             background-size: cover;
+             background-position: center center;
+  }
+      #div5 {background-image: url("images/img2.jpg");
+             background-size: cover;
+             background-position: center center;
+  }
+      
+      #div5 a{text-decoration:none;
+              color:white;
+              border:solid 2px white;
+              padding-top:9px;
+              padding-bottom:9px;
+              padding-left:40px;
+              padding-right:40px;
+              text-align:center;}
+  
+      #div6 {background-image: url("images/img3.jpg");
+             background-size: cover;
+             background-position: center center;
+  }
+  
+      
+      
+  @media (max-width:767px){
+      #div1 {
+          height:60px;
+      }
+      #div2 {
+          height:350px;
+      }
+      
+      
+      #div3 {
+          padding-top:40px;
+          height:320px;
+          line-height:320px;
+          display:inline-block;
+          line-height:normal;
+          vertical-align:middle;
+          padding-left:30px;
+          padding-right:30px;
+            
+           
+      }
+      #div4 {
+          height:385px;
+          margin-top:0px;
+      }
+      #div5 {
+          height:200px;
+             line-height:200px;
+             text-align:center;
+      }
+      #div6 {
+          height:200px;
+      }
+      
+  }
+  
+  @media (min-width:768px) and (max-width:991px){
+          
+              #div1 {height:60px;
+                  width:100%;
+                  float:left;
+              }
+              #div2 {height:562px;
+                  width:100%;
+                  float:left;
+              }
+              .3 {
+                  height:282px;
+                  text-align:center;
+                  line-height:282px;
+      }
+              #div3 {
+                  width:100%;
+                  float:left; 
+                  padding-left:65px;
+                  padding-right:65px;
+                  padding-top:52.84px;
+                  padding-bottom:52.84px;
+              }
+              #div4 {height:360px;
+                  width:50%;
+                  float:left;
+              }
+              #div5 {height:180px;
+                  line-height:180px;
+                  text-align:center;
+                  width:50%;
+                  float:left;
+              }
+              #div6 {height:180px;
+                  width:50%;
+                  float:left;
+              }
+              
+  }
+  
+  @media (min-width:992px){
+          
+              #div1 {height:60px;
+                  width:100%;
+                  float:left;
+              }
+              #div2 {height:700px;
+                  width:50%;
+                  float:left;
+              }
+              .3 {
+                      height:350px;
+                  text-align:center;
+                  line-height:350px;
+      }
+              #div3 {
+                  width:50%;
+                  float:left;
+                  padding-left:20px;
+                  padding-right:20px;
+                  padding-top:86.84px;
+                  padding-bottom:86.84px;
+              }
+              #div4 {height:350px;
+                  width:25%;
+                  float:left;
+              }
+              #div5 {height:175px;
+                  line-height:175px;
+                  text-align:center;
+                  width:25%;
+                  float:left;
+              }
+              #div6 {height:175px;
+                  width:25%;
+                  float:left;
+              }
+              
+  }
+  

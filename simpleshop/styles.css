@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  
+  body {
+    margin: 0;
+    min-width: 992px;
+    font-family: "Helvetica";
+  }
+  a {
+      text-decoration:none;
+      color: black;
+  }
+  /* navbar */
+  #navbar {
+      padding: 0px 15px 0px 30px;
+      border-bottom: 1px solid #eee;
+      overflow: hidden;
+      background-color: white;
+      box-shadow: 0 1px 3px 0 rgba(0,0,0,0.50);
+      height: 60px;
+  }
+  #navbar .nav {
+      float:right;
+      padding-left:15px;
+      padding-right:15px;
+      vertical-align: middle;
+      line-height: 60px;
+  }
+  
+  ul { 
+      padding-right:0;
+      padding-top:0;
+      margin-top:0;
+  }
+  
+  li{
+      size:13px;
+      color:black;
+      list-style:none;
+      font-family:Helvetica;
+  }
+   a{ 
+      text-decoration:none;
+  }
+  ul a:hover {
+      background-color:#eeeeee;
+  }
+  
+  h1 {
+      size:24px;
+      color:#545454;
+      font-family:Helvetica;
+      padding-top:60px;
+      text-align: center;
+  }
+  #logo {
+      font-family: Helvetica;
+      float: left;
+      line-height: 60px;
+      vertical-align: middle;
+    
+   
+  }
+  #logo img {
+      vertical-align: middle;
+      line-height:normal;
+  }
+  
+  #main .hero-header {
+      height: 450px;
+      background-image: url("images/hero_header.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      
+  }
+  /* hero header */
+  
+  .container {
+      display:inline-block;
+  }
+  #container-box1 {
+      border:solid white 2px;
+      width:722px;
+      height:360px;
+      margin-right:auto;
+      margin-left:auto;
+  }
+  
+  #one {
+      
+      float:left;
+      margin-right:20px;
+      margin-bottom:80px;
+      margin-top:60px;
+      
+  }
+  
+  #two {
+      float:left;
+      margin-right:20px;
+      margin-bottom:80px;
+      margin-top:60px;
+  }
+  
+  #three {
+      float:left;
+      margin-bottom:80px;
+      margin-top:60px;
+     
+  }
+  
+  
+  #four {
+      float:left;
+      margin-bottom:80px;
+      margin-right:20px;
+     
+  }
+  
+  #five {
+      float:left;
+      margin-bottom:80px;
+      margin-right:20px;
+  }
+  
+  #six {
+      float:left;
+      margin-bottom:80px;
+     
+  }
+  
+  #seven {
+      float:left;
+      margin-bottom:120px;
+      margin-right:20px;
+   
+  }
+  
+  #eight {
+      float:left;
+      margin-bottom:120px;
+      margin-right:20px;
+  }
+  
+  
+  #nine {
+      float:left;
+      margin-bottom:120px;
+      
+  }
+  /* products */
+  
+  .info {
+      padding-top:20px;
+      text-align: center;
+      size:16px;
+      font-family:Helvetica;
+  }
+  
+  br {
+      margin-bottom:4px;}
+  /* footer */
+  
+  #sns
+  {
+      border:solid white 2px;
+      width:140px;
+      height:160px;
+      margin-left:auto;
+      margin-right:auto;
+      
+  }
+  
+  #fb{
+      float:left;
+      margin-right:20px;
+      margin-bottom:80px;
+     
+  }
+  #in{
+      float:left;
+      margin-right:20px;
+      margin-bottom:80px;
+      
+  }
+  #tw{
+      float:left;
+      margin-bottom:80px;
+    
+  }
+  
+  

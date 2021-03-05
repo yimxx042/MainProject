@@ -1,58 +1,129 @@
 body {
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Inter", sans-serif;
+}
 
-h1, h2, h3 {
-  font-family: "Lobster", cursive; }
 
-h2 {
-  color: #3046C5; }
+.navbar {
+  background-color: #090d0f;
+  font-size: 1.2rem;
+}
 
-header h2 {
-  color: #CEC8FF; }
-
-.site-footer {
-  background-image: linear-gradient #CEC8FF, white;
-  padding: 20px 0; }
+#feedback h2{
+  text-align: center;
+}
 
 .jumbotron {
-  margin: 0;
   padding: 30px;
-  background-image: linear-gradient(to right, #5637dd, #3046C5, #60106b);
-  color: white; }
+  background: rgb(236, 232, 232);
+  color: rgb(17, 10, 10);
+  margin: 0;
+  border-bottom: 1px ridge #f3e5e5;
+  
+}
 
-.row-content {
-  padding: 50px 0px;
-  border-bottom: 1px ridge;
-  min-height: 200px; }
+.main-container {
+  padding: 30px;
+}
 
-.navbar-dark {
-  background-color: #901CAD; }
+p {
+  font-size: 1.5rem;
+}
 
-.tab-content {
-  border: 1px solid #DDD;
-  border-top: none;
-  padding: 10px; }
+.main-content h2 {
+  font-size: 2.2rem;
+}
 
-.carousel-caption {
-  background-color: rgba(0, 0, 0, 0.5); }
+.main-content p {
+  font-size: 1.3rem;
+}
 
-.carousel {
-  border: solid #5637dd; }
+.skill h3 {
+  font-size:1.5rem;
+}
 
-#carouselButton {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  z-index: 100; }
+.skill p {
+  font-size:1.2rem;
+}
 
-#reserveModal .modal-header {
-  background-color: #17A2B8; }
+.backend {
+  margin-top: 30px;
+}
 
-#reserveModal .modal-header h3 {
-  color: white; }
+.skill {
+  border-bottom: 1px ridge #f3e5e5;
+  padding-bottom: 30px;
+}
 
-#loginModal .modal-header {
-  background-color: #901CAD; }
+.skill-main {
+  border-bottom: 1px ridge #f3e5e5;
+  min-height: 200px;
+}
 
-#loginModal .modal-header h3 {
-  color: white; }
+.skill-main h3 {
+  font-size:2.5rem;
+}
+
+.skill-main p {
+  font-size: 1.3rem;
+  padding-right: 14px;
+}
+
+.skill-main-content{
+  min-height: 300px;
+}
+
+.main-three {
+  min-height: 200px;
+}
+
+.main-three h3 {
+  font-size:2.5rem;
+}
+
+.main-three p {
+  font-size: 1.3rem;
+  padding-right: 14px;
+}
+
+.about-button {
+  border-bottom: 1px ridge #f3e5e5;
+  padding: 25px;
+}
+
+h5 {
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+.modal-header {
+  background-color: #0096dc;
+  color: white;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+.card-text {
+  font-size: 1.0rem;
+}
+
+.card {
+  margin-bottom: 50px;
+}
+
+footer {
+  background: #550404;
+  color: white;
+  padding: 15px;
+}

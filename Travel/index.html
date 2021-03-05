@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Travel Website</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <img id="logo" src="images/logo.png" width="165" height="58">
+ 
+  <div id="menu">
+    <a id="Home">Home</a>
+    <a id="Seoul">Seoul</a>
+    <a id="Tokyo">Tokyo</a>
+    <a id="Paris">Paris</a>
+  </div>
+
+  <img id="photo" src="images/home.png" width="90%">
+
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  
+  <script>
+    // 사진을 바꿔주는 함수
+    $('#Home').on('click', clickHome);
+    $('#Seoul').on('click', clickSeoul);
+    $('#Tokyo').on('click', clickTokyo);
+    $('#Paris').on('click', clickParis);
+
+    $('#photo').on('mouseenter',mouseEnterPhoto);
+    $('#photo').on('mouseleave', mouseLeavePhoto);
+
+    function clickHome() {
+      $('#photo').attr('src', 'images/home.png');
+      $('#Home').css('font-weight','bold');
+      $('#Seoul').css('font-weight','normal');
+      $('#Tokyo').css('font-weight','normal');
+      $('#Paris').css('font-weight','normal');
+
+    }
+
+    function clickSeoul() {
+      $('#photo').attr('src', 'images/seoul.png');
+      $('#Home').css('font-weight','normal');
+      $('#Seoul').css('font-weight','bold');
+      $('#Tokyo').css('font-weight','normal');
+      $('#Paris').css('font-weight','normal');
+
+    }
+
+    function clickTokyo() {
+      $('#photo').attr('src', 'images/tokyo.png');
+      $('#Home').css('font-weight','normal');
+      $('#Seoul').css('font-weight','normal');
+      $('#Tokyo').css('font-weight','bold');
+      $('#Paris').css('font-weight','normal');
+
+    }
+    
+    function clickParis() {
+      $('#photo').attr('src', 'images/paris.png');
+      $('#Home').css('font-weight','normal');
+      $('#Seoul').css('font-weight','normal');
+      $('#Tokyo').css('font-weight','normal');
+      $('#Paris').css('font-weight','bold');
+
+    }
+  </script>
+</body>
+</html>
