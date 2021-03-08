@@ -101,3 +101,19 @@ $(document).ready(function(){
         $("span.viewer6").text(93 + view6);
     });
 });
+
+var counter7 = 0;
+$(document).ready(function(){
+    $("#heart-button7").click(function(){
+        counter7++;
+        $("span.number7").text(105 + counter7);
+    });
+});
+
+var view7 = 0;
+$(document).ready(function(){
+    $("#viewer-button7").click(function(){
+        view7++;
+        $("span.viewer7").text(119 + view7);
+    });
+});
