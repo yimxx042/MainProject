@@ -14,10 +14,10 @@ body {
 
 .jumbotron {
   padding: 30px;
-  background: rgb(236, 232, 232);
+  background: rgb(252, 252, 229);
   color: rgb(17, 10, 10);
   margin: 0;
-  border-bottom: 1px ridge #f3e5e5;
+  border-bottom: 1px ridge #fdfbfb;
   
 }
 
