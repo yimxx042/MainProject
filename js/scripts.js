@@ -50,6 +50,54 @@ var view3 = 0;
 $(document).ready(function(){
     $("#viewer-button3").click(function(){
         view3++;
-        $("span.viewer3").text(98 + view3);
+        $("span.viewer3").text(82 + view3);
+    });
+});
+
+var counter4 = 0;
+$(document).ready(function(){
+    $("#heart-button4").click(function(){
+        counter4++;
+        $("span.number4").text(32 + counter4);
+    });
+});
+
+var view4 = 0;
+$(document).ready(function(){
+    $("#viewer-button4").click(function(){
+        view4++;
+        $("span.viewer4").text(82 + view4);
+    });
+});
+
+var counter5 = 0;
+$(document).ready(function(){
+    $("#heart-button5").click(function(){
+        counter5++;
+        $("span.number5").text(52 + counter5);
+    });
+});
+
+var view5 = 0;
+$(document).ready(function(){
+    $("#viewer-button5").click(function(){
+        view5++;
+        $("span.viewer5").text(72 + view5);
+    });
+});
+
+var counter6 = 0;
+$(document).ready(function(){
+    $("#heart-button6").click(function(){
+        counter6++;
+        $("span.number6").text(89 + counter6);
+    });
+});
+
+var view6 = 0;
+$(document).ready(function(){
+    $("#viewer-button6").click(function(){
+        view6++;
+        $("span.viewer6").text(93 + view6);
     });
 });
