@@ -117,3 +117,19 @@ $(document).ready(function(){
         $("span.viewer7").text(119 + view7);
     });
 });
+
+var counter8 = 0;
+$(document).ready(function(){
+    $("#heart-button8").click(function(){
+        counter8++;
+        $("span.number8").text(32 + counter8);
+    });
+});
+
+var view8 = 0;
+$(document).ready(function(){
+    $("#viewer-button8").click(function(){
+        view8++;
+        $("span.viewer8").text(57 + view8);
+    });
+});
