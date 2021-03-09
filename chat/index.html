@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chatbot</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
+</head>
+<body>
+  <div class="chat-container">
+    <div class="chat-header">
+      <button id="close" class="header-btn"></button>
+      <button id="minimize" class="header-btn"></button>
+      <button id="maximize" class="header-btn"></button>
+
+      <img id="profile-pic" src="images/young.png" width="50" height="50">
+      <span id="username">Helper</span>
+    </div>
+
+    <div class="chatbox">
+      <div class="friend-bubble bubble">
+        How can I help you?
+      </div>
+    </div>
+
+    <div class="text-box">
+      <textarea id="new-message" placeholder="Please type here."></textarea>
+      <button id="send">send</button>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+  
+
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -133,3 +133,19 @@ $(document).ready(function(){
         $("span.viewer8").text(57 + view8);
     });
 });
+
+var counter9 = 0;
+$(document).ready(function(){
+    $("#heart-button9").click(function(){
+        counter9++;
+        $("span.number9").text(78 + counter9);
+    });
+});
+
+var view9 = 0;
+$(document).ready(function(){
+    $("#viewer-button9").click(function(){
+        view9++;
+        $("span.viewer9").text(99 + view9);
+    });
+});
