@@ -9,3 +9,9 @@ function textSent(){
 }
 
 
+$(document).on('keydown', keyboardInput);
+function keyboardInput(e) {
+    if (e['key'] === 'Enter') {
+        textSent();
+    }
+  }
