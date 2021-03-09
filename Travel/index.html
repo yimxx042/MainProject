@@ -9,10 +9,10 @@
   <img id="logo" src="images/logo.png" width="165" height="58">
  
   <div id="menu">
-    <a id="Home">Home</a>
-    <a id="Seoul">Seoul</a>
-    <a id="Tokyo">Tokyo</a>
-    <a id="Paris">Paris</a>
+    <a id="home">Home</a>
+    <a id="seoul">Seoul</a>
+    <a id="tokyo">Tokyo</a>
+    <a id="paris">Paris</a>
   </div>
 
   <img id="photo" src="images/home.png" width="90%">
@@ -23,50 +23,79 @@
   crossorigin="anonymous"></script>
   
   <script>
-    // 사진을 바꿔주는 함수
-    $('#Home').on('click', clickHome);
-    $('#Seoul').on('click', clickSeoul);
-    $('#Tokyo').on('click', clickTokyo);
-    $('#Paris').on('click', clickParis);
+   
 
-    $('#photo').on('mouseenter',mouseEnterPhoto);
-    $('#photo').on('mouseleave', mouseLeavePhoto);
+    $('#menu a').on('click',selectMenu);
 
-    function clickHome() {
-      $('#photo').attr('src', 'images/home.png');
-      $('#Home').css('font-weight','bold');
-      $('#Seoul').css('font-weight','normal');
-      $('#Tokyo').css('font-weight','normal');
-      $('#Paris').css('font-weight','normal');
+    // $('#photo').on('mouseenter',mouseEnterPhoto);
+    // $('#photo').on('mouseleave', mouseLeavePhoto);
+    $(document).on('keydown', selectMenu);
 
+    function selectMenu(event){
+      var targetID = '';
+      if (event.type === 'click'){
+        targetID = event.currentTarget.id;
+      } else if (event.type === 'keydown'){
+        if (event.key === '1') {
+          targetID = 'home';
+        } else if(event.key === '2'){
+          targetID = 'seoul';
+        } else if (event.key === '3') {
+          targetID = 'tokyo';
+        } else if (event.key === '4'){
+          targetID = "paris";
+        }
+      }
+
+      function processKeyEvent(event) {
+        if (event['key'] === '1'){
+          clickHome();
+        } else if (event['key']==='2'){
+          clickSeoul();
+        }
+      }
+
+      $('#photo').attr('src', 'images/' + targetID + '.png');
+      $('#menu a').css('font-weight','normal');
+      $('#' + targetID).css('font-weight', 'bold');
     }
 
-    function clickSeoul() {
-      $('#photo').attr('src', 'images/seoul.png');
-      $('#Home').css('font-weight','normal');
-      $('#Seoul').css('font-weight','bold');
-      $('#Tokyo').css('font-weight','normal');
-      $('#Paris').css('font-weight','normal');
 
-    }
+    // function clickHome() {
+    //   $('#photo').attr('src', 'images/home.png');
+    //   $('#Home').css('font-weight','bold');
+    //   $('#Seoul').css('font-weight','normal');
+    //   $('#Tokyo').css('font-weight','normal');
+    //   $('#Paris').css('font-weight','normal');
 
-    function clickTokyo() {
-      $('#photo').attr('src', 'images/tokyo.png');
-      $('#Home').css('font-weight','normal');
-      $('#Seoul').css('font-weight','normal');
-      $('#Tokyo').css('font-weight','bold');
-      $('#Paris').css('font-weight','normal');
+    // }
 
-    }
+    // function clickSeoul() {
+    //   $('#photo').attr('src', 'images/seoul.png');
+    //   $('#Home').css('font-weight','normal');
+    //   $('#Seoul').css('font-weight','bold');
+    //   $('#Tokyo').css('font-weight','normal');
+    //   $('#Paris').css('font-weight','normal');
+
+    // }
+
+    // function clickTokyo() {
+    //   $('#photo').attr('src', 'images/tokyo.png');
+    //   $('#Home').css('font-weight','normal');
+    //   $('#Seoul').css('font-weight','normal');
+    //   $('#Tokyo').css('font-weight','bold');
+    //   $('#Paris').css('font-weight','normal');
+
+    // }
     
-    function clickParis() {
-      $('#photo').attr('src', 'images/paris.png');
-      $('#Home').css('font-weight','normal');
-      $('#Seoul').css('font-weight','normal');
-      $('#Tokyo').css('font-weight','normal');
-      $('#Paris').css('font-weight','bold');
+    // function clickParis() {
+    //   $('#photo').attr('src', 'images/paris.png');
+    //   $('#Home').css('font-weight','normal');
+    //   $('#Seoul').css('font-weight','normal');
+    //   $('#Tokyo').css('font-weight','normal');
+    //   $('#Paris').css('font-weight','bold');
 
-    }
+    // }
   </script>
 </body>
 </html>
