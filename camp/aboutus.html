@@ -1,17 +1,22 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags always come first -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    
-    <!-- build:css css/main.css -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <!-- endbuild -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+   <!-- Required meta tags always come first -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta name="description" content="">
+   <meta name="generator" content="Hugo 0.80.0">
+
+   <!-- build:css css/main.css -->
+   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+   <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+   <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+   <link rel="stylesheet" href="css/styles.css" />
+   <!-- endbuild -->
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;900&display=swap" rel="stylesheet">
+   <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
+
 
     <title>CampFire: A Better Way To Camp</title>
 </head>
@@ -31,6 +36,10 @@
             </div>
         </div>
     </header>
+
+    <button class="to-top-btn">
+        <img src="img/arrow.png" width="24" height="24">
+    </button>
 
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
         <div class="container">
@@ -226,12 +235,15 @@
         </div>
     </footer>
 
-     <!-- build:js js/main.js -->
-     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-     <script src="js/scripts.js"></script>
-     <!-- endbuild -->
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <!-- build:js js/main.js -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  
+    <!-- endbuild -->
 
 </body>
 

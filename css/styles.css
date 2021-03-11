@@ -2,6 +2,20 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+.to-top-btn {
+  background-color: rgb(238, 226, 121);
+  padding: 15px;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 5px 0 rgba(0,0,0,0.05), 0 5px 5px 0 rgba(0,0,0,0.05);
+  border-radius: 50%;
+  cursor: pointer;
+  position: fixed;
+  bottom: 30px;
+  right: 90px;
+  z-index: 1;
+  display: none;
+}
 
 .navbar {
   background-color: #090d0f;

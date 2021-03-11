@@ -55,7 +55,9 @@
         }
       }
 
+      $('#photo').hide();
       $('#photo').attr('src', 'images/' + targetID + '.png');
+      $('#photo').fadeIn(1000);
       $('#menu a').css('font-weight','normal');
       $('#' + targetID).css('font-weight', 'bold');
     }

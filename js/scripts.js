@@ -4,6 +4,22 @@ $(function() {
     });
 });
 
+$(window).on('scroll', function(){
+    $('.top').css('opacity', 1 - $(window).scrollTop() / $('.top').height());
+});
+
+$(window).scroll(function(){
+    if ($(this).scrollTop() > 300){
+        $('.to-top-btn').fadeIn();
+    } else {
+        $('.to-top-btn').fadeOut();
+    }
+});
+
+$('.to-top-btn').click(function() {
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+    return false;
+  });
 
 
 var counter = 0;
@@ -147,5 +163,21 @@ $(document).ready(function(){
     $("#viewer-button9").click(function(){
         view9++;
         $("span.viewer9").text(99 + view9);
+    });
+});
+
+var counter10 = 0;
+$(document).ready(function(){
+    $("#heart-button10").click(function(){
+        counter10++;
+        $("span.number10").text(108 + counter10);
+    });
+});
+
+var view10 = 0;
+$(document).ready(function(){
+    $("#viewer-button10").click(function(){
+        view10++;
+        $("span.viewer10").text(120 + view10);
     });
 });
