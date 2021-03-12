@@ -19,14 +19,23 @@ $('.playlist').each(function(){
          }
     });
 
-    console.log($(document).height());
-    console.log(windowBottom);
+//     console.log($(document).height());
+//     console.log(windowBottom);
 
-    if (windowBottom == $(document).height()) {
+//     if (windowBottom == $(document).height()) {
+//         $('.to-top-btn').fadeIn();
+//     } else {
+//         $('.to-top-btn').fadeOut();
+//     }
+//  }
+
+$(window).scroll(function(){
+    if ($(this).scrollTop() > 300){
         $('.to-top-btn').fadeIn();
     } else {
         $('.to-top-btn').fadeOut();
     }
+});
  }
 
   $(window).on('scroll', scrollHandler);
