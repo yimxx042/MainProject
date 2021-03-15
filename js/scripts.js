@@ -181,3 +181,19 @@ $(document).ready(function(){
         $("span.viewer10").text(120 + view10);
     });
 });
+
+var counter11 = 0;
+$(document).ready(function(){
+    $("#heart-button11").click(function(){
+        counter11++;
+        $("span.number11").text(92 + counter11);
+    });
+});
+
+var view11 = 0;
+$(document).ready(function(){
+    $("#viewer-button11").click(function(){
+        view11++;
+        $("span.viewer11").text(130 + view11);
+    });
+});
