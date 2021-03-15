@@ -22,6 +22,46 @@ $('.to-top-btn').click(function() {
   });
 
 
+/*About*/
+
+
+
+ function scrollHandler() {
+     if($(window).scrollTop() >= $('.projects').position().top) {
+       $('.skill').each(function(){
+     var skill = $(this);
+     var percentage = skill.find('.percentage').text();
+     skill.find('.inner-bar').animate({'width': percentage}, 1200);
+   });
+     } 
+     $('section').each(function(){
+       if($(window).scrollTop() >= $(this).position().top){
+         $(this).find('.vertical-center').animate({top:'0', opacity: '1'}, 800);
+       }
+     });
+   }
+  
+   $(window).on('scroll', scrollHandler);
+  
+   scrollHandler();
+   
+    
+
+  
+  
+  $('.menu-right button').on('click', function(){
+    var id = $(this).attr('id');
+    if (id == "about-btn"){
+      $('html, body').animate({scrollTop: $('.about').position().top}, 1000)
+      
+    } else if (id == "contact-btn"){
+      $('html, body').animate({scrollTop: $('.contact').position().top}, 1000)
+    }
+  })
+  
+  
+
+
 var counter = 0;
 $(document).ready(function(){
     $("#heart-button").click(function(){
@@ -197,3 +237,4 @@ $(document).ready(function(){
         $("span.viewer11").text(130 + view11);
     });
 });
+

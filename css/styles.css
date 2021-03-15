@@ -17,6 +17,7 @@ body {
   display: none;
 }
 
+
 .navbar {
   background-color: #090d0f;
   font-size: 1.2rem;
@@ -28,11 +29,85 @@ body {
 
 .jumbotron {
   padding: 30px;
-  background: rgb(252, 252, 246);
+  background: rgb(246, 250, 252);
   color: rgb(17, 10, 10);
   margin: 0;
   border-bottom: 2px ridge #fffde1;
   
+}
+
+.projects {
+  border-bottom: 2px ridge red;
+}
+
+/* about */
+
+
+.about {
+  height: 80vh;
+  min-height: 600px;
+  text-align: center;
+  border-bottom: 2px ridge red;
+  margin-bottom: 40px;
+}
+
+.about h3 {
+  font-size: 40px;
+  color: #4a4a4a;
+  margin-top: 70px;
+  margin-bottom: 37px;
+}
+
+.about p {
+  font-size: 16px;
+  color: #4a4a4a;
+  margin: 0;
+  margin-bottom: 61px;
+}
+
+.about .skillset {
+  display: inline-block;
+}
+
+.about .skill:not(:last-child) {
+  margin-bottom: 17px;
+}
+
+.about .skill .title {
+  display: inline-block;
+  width: 50px;
+  vertical-align: middle;
+  margin-right: 15px;
+  font-size: 16px;
+  color: #4a4a4a;
+}
+
+.about .skill .bar {
+  display: inline-block;
+  vertical-align: middle;
+  width: 646px;
+  height: 33px;
+  border-radius: 25px;
+  background-color: #f9f9f9;
+  position: relative;
+  line-height: 33px;
+}
+
+.about .skill .bar .inner-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 33px;
+  background: #bbe6ff;
+  border-radius: 25px;
+}
+
+.about .skill .bar .percentage {
+  font-size: 14px;
+  color: #9b9b9b;
+  position: absolute;
+  right: 20px;
+  top: 0;
 }
 
 .main-container {
@@ -125,6 +200,13 @@ h5 {
 @media (min-width: 768px) {
   .bd-placeholder-img-lg {
     font-size: 3.5rem;
+  }
+}
+
+@media (max-width:767px){
+  .about .skill .bar {
+    width: 350px;
+    height: 33px;   
   }
 }
 
